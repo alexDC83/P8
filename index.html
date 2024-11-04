@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Nina Carducci - Photographe professionnelle à Bordeaux - Portraits &
-      Événements
-    </title>
-    <meta
-      name="description"
-      content="Nina Carducci, photographe professionnelle à Bordeaux, spécialisée en portraits, événements et mariages. Capturez vos moments uniques avec une touche d'émotion intemporelle."
-    />
-
-    <!-- Optimisation CSS -->
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nina Carducci - Photographe professionnelle à Bordeaux - Portraits & Événements</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux, spécialisée en portraits, événements et mariages. Capturez vos moments uniques avec une touche d'émotion intemporelle." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Nina Carducci" />
+  <meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+  <meta property="og:description" content="Photographe professionnelle à Bordeaux, spécialisée en portraits, événements et mariages." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  
+  <!-- Optimisation CSS -->
     <link
       rel="preload"
       href="./assets/bootstrap/bootstrap.min.css"
@@ -39,6 +41,41 @@
     ></script>
     <script async src="./assets/maugallery.min.js"></script>
     <script defer src="./assets/scripts.min.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci Photography",
+        "image": "./assets/images/nina.webp",
+        "description": "Photographe professionnelle à Bordeaux, spécialisée en portraits, événements et mariages",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bordeaux",
+          "addressCountry": "FR"
+        },
+        "priceRange": "€€",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Shooting photo",
+            "price": "350",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "name": "Retouches",
+            "price": "50",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "name": "Album photos",
+            "price": "400",
+            "priceCurrency": "EUR"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <nav class="top-header">
@@ -389,7 +426,9 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.webp" />
+          <img src="./assets/images/camera.webp" alt="Appareil photo professionnel" 
+          loading="lazy"
+        />
         </div>
       </div>
     </footer>
