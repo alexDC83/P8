@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="fr">
  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +22,7 @@
       as="style"
     />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/style.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,16 +32,7 @@
       rel="stylesheet"
     />
 
-    <!-- Script Asynchrone -->
-    <script async src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script
-      async
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script async src="./assets/maugallery.min.js"></script>
-    <script defer src="./assets/scripts.min.js"></script>
+   
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -78,30 +70,37 @@
     </script>
   </head>
   <body>
-    <nav class="top-header">
-      <h1 class="name">Nina Carducci</h1>
-      <div class="nav">
-        <ul>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#gallery">Galerie</a></li>
-          <li><a href="#services">Service</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a
-              class="social-link"
-              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-              target="_blank"
-              ><img src="assets/images/instagram.png" alt=""
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <header id="header">
+    <header>
+      <nav class="top-header">
+        <h1 class="name">Nina Carducci</h1>
+        <div class="nav">
+          <ul role="menubar">
+            <li role="menuitem"><a href="#about" aria-label="À propos">À propos</a></li>
+            <li role="menuitem"><a href="#gallery" aria-label="Galerie">Galerie</a></li>
+            <li role="menuitem"><a href="#services" aria-label="Service">Service</a></li>
+            <li role="menuitem"><a href="#contact" aria-label="Contact">Contact</a></li>
+            <li role="menuitem">
+              <a
+                class="social-link"
+                href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img src="assets/images/instagram.png" alt="Instagram" width="20" height="20" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+    <section id="header"  aria-label="Diaporama">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
         data-bs-ride="carousel"
+        aria-label="Carrousel de photos"
       >
         <div class="carousel-indicators">
           <button
@@ -133,23 +132,28 @@
                   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp
                 "
                 media="(max-width: 480px)"
+              width="480"
               />
               <source
                 srcset="
                   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp
                 "
                 media="(max-width: 768px)"
+              width="768"
               />
               <source
                 srcset="
                   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp
                 "
                 media="(max-width: 1024px)"
+                width="1024"
               />
               <img
                 src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp"
                 class="d-block w-100"
-                alt="Ryoji Iwata"
+                alt="Homme d'affaires traversant un passage piéton"
+                width="1920"
+                fetchpriority="high"
               />
             </picture>
           </div>
@@ -160,24 +164,28 @@
                   ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480.webp
                 "
                 media="(max-width: 480px)"
+         
               />
               <source
                 srcset="
                   ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.webp
                 "
                 media="(max-width: 768px)"
+            
               />
               <source
                 srcset="
                   ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1024.webp
                 "
                 media="(max-width: 1024px)"
+            
               />
               <img
                 src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp"
                 class="d-block w-100"
-                alt="Nicholas Green"
+                alt="Foule de personne contente levant les bras en l'air"
                 loading="lazy"
+                width="1920"
               />
             </picture>
           </div>
@@ -188,24 +196,28 @@
                   ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-480.webp
                 "
                 media="(max-width: 480px)"
+       
               />
               <source
                 srcset="
                   ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp
                 "
                 media="(max-width: 768px)"
+          
               />
               <source
                 srcset="
                   ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1024.webp
                 "
                 media="(max-width: 1024px)"
+                
               />
               <img
                 src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp"
                 class="d-block w-100"
-                alt="Edward Cisneros"
+                alt="Couple de jeune marié s'embrassant au milieu d'un groupe de personne lors de leur mariage"
                 loading="lazy"
+                width="1920"
               />
             </picture>
           </div>
@@ -215,6 +227,7 @@
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
+          aria-label="Image précédente"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -224,29 +237,31 @@
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
+          aria-label="Image suivante"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </header>
-    <main>
-      <section id="about">
+    </section>
+  
+    <section id="about" aria-labelledby="about-title">
         <div class="picture left">
           <img
             src="./assets/images/nina.webp"
-            alt="Nina Carducci, photographe à Bordeaux"
+            alt="Nina Carducci, photographe professionnelle à Bordeaux"
             loading="lazy"
+          
           />
         </div>
         <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>
-          <h3 class="about-me__introduction">
+          <h2 id="about-title" class="about-me__title">A propos de moi</h2>
+          <p class="about-me__introduction">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestiné. Saisir un moment, une émotion, une situation, un
             endroit, une lumière et les rendre immortels, voilà ce qui me fait
             vibrer.
-          </h3>
+          </p>
           <p>
             Nous passons notre vie à chercher le bonheur, et lorsque nous y
             touchons, nous n’avons qu’une envie : le figer au travers de
@@ -260,8 +275,8 @@
           </p>
         </div>
       </section>
-      <section id="gallery">
-        <h2 class="title">Portfolio</h2>
+      <section id="gallery"  aria-labelledby="gallery-title">
+        <h2 id="gallery-title" class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="gallery" style="display: none">
             <img
@@ -269,63 +284,81 @@
               data-gallery-tag="Concert"
               class="gallery-item"
               src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-              alt="Aaron Paul Concert"
+              alt="Concert d'Aaron Paul"
+              width="440"
+              height="440"
             />
             <img
               loading="lazy"
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-              alt="Ali moshedlou entreprise"
+              alt="Portrait professionnel en entreprise"
+              width="440"
+              height="440"
             />
             <img
               loading="lazy"
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-              alt="Jason Goodman Entreprise"
+              alt="Réunion d'entreprise"
+              width="440"
+              height="440"
             />
             <img
               loading="lazy"
               data-gallery-tag="Mariages"
               class="gallery-item"
               src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-              alt="hannah-busing"
+              alt="Mains entrelacées lors d'un mariage"
+              width="440"
+              height="440"
             />
             <img
               loading="lazy"
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-              alt="Ade Tunji Portrait"
+              alt="Portrait en gros plan"
+              width="440"
+              height="440"
             />
             <img
               loading="lazy"
               data-gallery-tag="Mariages"
               class="gallery-item"
               src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-              alt="Jakob Owens Mariage"
+              alt="Couple de mariés heureux"
+              width="440"
+              height="440"
             />
             <img
               loading="lazy"
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-              alt="Nino Van Prattenburg Portrait"
+              alt="Portrait artistique en noir et blanc"
+              width="440"
+              height="440"
             />
             <img
               loading="lazy"
               data-gallery-tag="Concert"
               class="gallery-item"
               src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-              alt="Austin Neill Concert"
+              alt="Chanteur en concert"
+              width="440"
+              height="440"
             />
             <img
               loading="lazy"
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-              alt="Mateus Campos Felipe Entreprise"
+              alt="Portrait en situation de travail"
+              width="440"
+              height="440"
             />
           </div>
         </div>
@@ -344,8 +377,8 @@
           </figure>
         </div>
       </section>
-      <section id="services">
-        <h2 class="title">Mes services</h2>
+      <section id="services" aria-labelledby="services-title">
+        <h2  id="services-title" class="title">Mes services</h2>
         <div class="container">
           <div class="service">
             <div class="service__description">
@@ -403,34 +436,45 @@
         </figure>
       </div>
     </main>
-    <footer id="contact">
+    <footer id="contact"  role="contentinfo">
       <div class="container">
         <div class="form-container">
           <h2>Une question ? Une demande de devis ?</h2>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
-          <form action="#" method="post">
-            <label>Nom</label>
-            <input type="text" name="nom" id="nom" />
-            <label>Email</label>
-            <input type="email" name="email" id="email" />
-            <label>Message</label>
+          <form action="#" method="post" aria-label="Formulaire de contact">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" required aria-required="true" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required aria-required="true" />
+            <label for="message">Message</label>
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="10"
+              required
+              aria-required="true"
             ></textarea>
-            <input type="submit" value="Envoyer" />
-          </form>
+          <button type="submit">Envoyer</button>
+        </form>
         </div>
         <div class="picture right">
           <img src="./assets/images/camera.webp" alt="Appareil photo professionnel" 
-          loading="lazy"
-        />
+            loading="lazy"
+          />
         </div>
       </div>
     </footer>
+    <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./assets/maugallery.min.js"></script>
+    <script defer src="./assets/scripts.js"></script>
   </body>
 </html>
